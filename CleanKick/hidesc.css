@@ -1,0 +1,8 @@
+.scrollbar-hide-all {
+    scrollbar-width: none; /* Untuk Firefox */
+    -ms-overflow-style: none; /* Untuk IE/Edge */
+}
+
+.scrollbar-hide-all::-webkit-scrollbar {
+    display: none; /* Untuk Chrome/Safari */
+}

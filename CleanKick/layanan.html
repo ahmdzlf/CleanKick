@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan - Clean Kick</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Tambahan untuk scrollbar custom */
+        .scroll-container::-webkit-scrollbar {
+            height: 10px;
+        }
+        .scroll-container::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 5px;
+        }
+        .scroll-container::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-bold mb-4 text-gray-700">Layanan</h1>
+
+        <!-- Container Scroll -->
+        <div class="relative">
+            <!-- Tombol Scroll Kiri -->
+            <button id="scrollLeft" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 shadow-md rounded-full">
+                &lt;
+            </button>
+
+            <!-- Scrollable Content -->
+            <div id="scrollContainer" class="flex space-x-4 overflow-x-auto scroll-container">
+                <!-- Kartu 1 -->
+                <div class="min-w-[300px] bg-gray-50 shadow-md rounded-md p-4 flex flex-col items-center">
+                    <img src="images/c_reguler.png" alt="Cuci Reguler" class="h-32 mb-4">
+                    <h2 class="text-lg font-semibold text-center mb-2">Cuci Reguler</h2>
+                    <p class="text-sm text-gray-500 text-center">Rp20.000 - Rp30.000</p>
+                    <p class="mt-4 text-sm text-gray-600 font-semibold">Keterangan Layanan</p>
+                    <ul class="text-sm text-gray-600 list-disc ml-4 mt-2 flex-grow">
+                        <li>Treatment membersihkan / cuci sepatu secara cepat khusus untuk sepatu (lebih dikhususkan sneakers/loafers) aman untuk semua bahan dan warna.</li>
+                        <li>Pengerjaan dapat ditunggu di workshop.</li>
+                        <li>Dilakukan secara manual sehingga aman untuk semua jenis sepatu.</li>
+                        <li>Aman untuk semua bahan material dan warna sepatu karena menggunakan bahan alami dan teknik yang benar.</li>
+                        <li>Bagian yang di treatment : upper,midsole.</li>
+                        <li>Durasi pengerjaan +- 3 hari.(Silahkan konfirmasi lagi ke workshop)</li>
+                    </ul>
+                    <button 
+                        class="mt-4 bg-teal-500 text-white w-full py-2 rounded-md"
+                        onclick="redirectToWhatsApp()">
+                        PESAN
+                    </button>
+                </div>
+
+                <!-- Kartu 2 -->
+                <div class="min-w-[300px] bg-gray-50 shadow-md rounded-md p-4 flex flex-col items-center">
+                    <img src="images/c_premium.png" alt="Cuci Premium" class="h-32 mb-4">
+                    <h2 class="text-lg font-semibold text-center mb-2">Cuci Premium</h2>
+                    <p class="text-sm text-gray-500 text-center">Rp40.000 - Rp60.000</p>
+                    <p class="mt-4 text-sm text-gray-600 font-semibold">Keterangan Layanan</p>
+                    <ul class="text-sm text-gray-600 list-disc ml-4 mt-2 flex-grow">
+                        <li>Treatment pencucian khusus untuk sepatu secara detail untuk seluruh bagian, aman untuk semua bahan dan warna.</li>
+                        <li>Dilakukan secara manual sehingga aman untuk semua jenis sepatu.</li>
+                        <li>Aman untuk semua bahan material dan warna sepatu karena menggunakan bahan alami dan teknik yang benar.</li>
+                        <li>Bagian yang di treatment : upper,midsole,outsole,insole,laces</li>
+                        <li>Durasi pengerjaan +- 1 hari.(Silahkan konfirmasi lagi ke workshop)</li>
+                    </ul>
+                    <button 
+                        class="mt-4 bg-teal-500 text-white w-full py-2 rounded-md"
+                        onclick="redirectToWhatsApp()">
+                        PESAN
+                    </button>
+                </div>
+
+                <!-- Kartu 3 -->
+                <div class="min-w-[300px] bg-gray-50 shadow-md rounded-md p-4 flex flex-col items-center">
+                    <img src="images/Repaint.png" alt="Repaint/Recolor" class="h-32 mb-4">
+                    <h2 class="text-lg font-semibold text-center mb-2">Repaint/Recolor</h2>
+                    <p class="text-sm text-gray-500 text-center">Rp40.000 - Rp60.000</p>
+                    <p class="mt-4 text-sm text-gray-600 font-semibold">Keterangan Layanan</p>
+                    <ul class="text-sm text-gray-600 list-disc ml-4 mt-2 flex-grow">
+                        <li>Treatment pewarnaan khusus untuk boost sepatu, aman untuk bahan boost. Dilakukan untuk mengembalikan warna boost yang menguning.</li>
+                        <li>Treatment ini sudah mendapatkan Free Premium Clean.</li>
+                        <li>Dilakukan secara manual dan detail sehingga aman untuk sepatu.</li>
+                        <li>Aman untuk sepatu karena menggunakan pewarna khusus untuk boost dan teknik yang benar.</li>
+                        <li>Bagian yang di treatment : midsole boost</li>
+                        <li>Durasi pengerjaan +- 5 hari.(Silahkan konfirmasi lagi ke workshop)</li>
+                        <li>Warna dapat request sesuai keinginan dengan menanyakan langsung pada tim kami.</li>
+                    </ul>
+                    <button 
+                        class="mt-4 bg-teal-500 text-white w-full py-2 rounded-md"
+                        onclick="redirectToWhatsApp()">
+                        PESAN
+                    </button>
+                </div>
+
+                <!-- Kartu 4 -->
+                <div class="min-w-[300px] bg-gray-50 shadow-md rounded-md p-4 flex flex-col items-center">
+                    <img src="images/Repair.png" alt="Repair(Perbaikan)" class="h-32 mb-4">
+                    <h2 class="text-lg font-semibold text-center mb-2">Repair(Perbaikan)</h2>
+                    <p class="text-sm text-gray-500 text-center">Rp40.000 - Rp60.000</p>
+                    <p class="mt-4 text-sm text-gray-600 font-semibold">Keterangan Layanan</p>
+                    <ul class="text-sm text-gray-600 list-disc ml-4 mt-2 flex-grow">
+                        <li>Sole Separation: Sol sepatu yang terlepas akan kami rekatkan dengan teknik terbaik.</li>
+                        <li>Scratch & Scuff: Menghilangkan goresan atau kerusakan kecil pada permukaan sepatu.</li>
+                        <li>Repaint & Restore: Pewarnaan ulang untuk sepatu yang warnanya memudar.</li>
+                        <li>Tear Repair: Menjahit kembali bagian sepatu yang sobek.</li>
+                        <li>Cleaning & Polishing: Pembersihan mendalam untuk hasil yang maksimal.</li>
+                        <li>Durasi pengerjaan +- 5 hari.(Silahkan konfirmasi lagi ke workshop)</li>
+                    </ul>
+                    <button 
+                        class="mt-4 bg-teal-500 text-white w-full py-2 rounded-md"
+                        onclick="redirectToWhatsApp()">
+                        PESAN
+                    </button>
+                </div>
+
+                <!-- Kartu 5 -->
+                <div class="min-w-[300px] bg-gray-50 shadow-md rounded-md p-4 flex flex-col items-center">
+                    <img src="images/Tass.png" alt="Cuci Tas" class="h-32 mb-4">
+                    <h2 class="text-lg font-semibold text-center mb-2">Cuci Tas</h2>
+                    <p class="text-sm text-gray-500 text-center">Rp40.000 - Rp60.000</p>
+                    <p class="mt-4 text-sm text-gray-600 font-semibold">Keterangan Layanan</p>
+                    <ul class="text-sm text-gray-600 list-disc ml-4 mt-2 flex-grow">
+                        <li>Membersihkan noda, debu, dan kotoran pada tas dengan teknik khusus yang aman untuk semua jenis material, seperti kain, kulit, suede, dan sintetis.</li>
+                        <li>Menjaga keindahan tekstur dan warna asli tas Anda tanpa merusak struktur atau detailnya.</li>
+                        <li>Mengembalikan tampilan tas seperti baru dengan perawatan tambahan untuk aksesori seperti resleting, gesper, dan tali.</li>
+                    </ul>
+                    <button 
+                        class="mt-4 bg-teal-500 text-white w-full py-2 rounded-md"
+                        onclick="redirectToWhatsApp()">
+                        PESAN
+                    </button>
+                </div>
+
+                <!-- Kartu 6 -->
+                <div class="min-w-[300px] bg-gray-50 shadow-md rounded-md p-4 flex flex-col items-center">
+                    <img src="images/Topii.png" alt="Cuci Topi" class="h-32 mb-4">
+                    <h2 class="text-lg font-semibold text-center mb-2">Cuci Topi</h2>
+                    <p class="text-sm text-gray-500 text-center">Rp40.000 - Rp60.000</p>
+                    <p class="mt-4 text-sm text-gray-600 font-semibold">Keterangan Layanan</p>
+                    <ul class="text-sm text-gray-600 list-disc ml-4 mt-2 flex-grow">
+                        <li>Membersihkan noda dan kotoran pada topi dengan teknik yang menjaga bentuk dan materialnya, baik untuk bahan kain, kulit, hingga bahan khusus seperti suede.</li>
+                        <li>Menghilangkan bau tak sedap pada topi sehingga nyaman dipakai kembali.</li>
+                        <li>Mengembalikan kecerahan warna topi tanpa memudarkan atau merusak desainnya.</li>
+                    </ul>
+                    <button 
+                        class="mt-4 bg-teal-500 text-white w-full py-2 rounded-md"
+                        onclick="redirectToWhatsApp()">
+                        PESAN
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Tombol Scroll Kanan -->
+            <button id="scrollRight" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 shadow-md rounded-full">
+                &gt;
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function redirectToWhatsApp() {
+            const phoneNumber = "6287878553821"; // Ganti dengan nomor WhatsApp Anda dalam format internasional
+            const message = "Halo, saya ingin memesan Layanan Anda"; // Pesan awal
+            const encodedMessage = encodeURIComponent(message); // Encode pesan untuk URL
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            window.open(whatsappUrl, "_blank"); // Membuka tautan di tab baru
+        }
+    </script>
+
+    <!-- JavaScript untuk scroll -->
+    <script>
+        const scrollContainer = document.getElementById('scrollContainer');
+        const scrollLeft = document.getElementById('scrollLeft');
+        const scrollRight = document.getElementById('scrollRight');
+
+        scrollLeft.addEventListener('click', () => {
+            scrollContainer.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+
+        scrollRight.addEventListener('click', () => {
+            scrollContainer.scrollBy({ left: 300, behavior: 'smooth' });
+        });
+    </script>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+    <script src="headfot.js"></script>
+</body>
+</html>

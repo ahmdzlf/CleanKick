@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <div id="header"></div>
+
+  <main class="max-w-6xl mx-auto mt-10 bg-white shadow-lg rounded-lg p-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- Left Section -->
+      <div class="bg-teal-500 text-white p-8 rounded-lg">
+        <h2 class="text-2xl font-bold mb-2">Informasi Kontak</h2>
+        <p class="mb-6 text-gray-100">Tanyakan Sesuatu Kami akan Membantu!</p>
+        <ul class="space-y-6">
+          <li class="flex items-center space-x-4">
+            <img src="images/bxs_phone-call.png" alt="Phone Icon" class="h-6 w-6">
+            <span>+62 857 1817 3038</span>
+          </li>
+          <li class="flex items-center space-x-4">
+            <img src="images/ic_sharp-email.png" alt="Email Icon" class="h-6 w-6">
+            <span>Cleankickoffcial@gmail.com</span>
+          </li>
+          <li class="flex items-center space-x-4">
+            <img src="images/carbon_location-filled.png" alt="Map Icon" class="h-6 w-6">
+            <span>Jalan Bikibottom No 1 London USA</span>
+          </li>
+        </ul>
+
+        <!-- Logo Section -->
+        <div class="mt-8 flex items-center space-x-4">
+          <a href="#" aria-label="Discord" class="hover:opacity-80">
+            <img src="images/ic_discord.png" alt="Discord Logo" class="h-8">
+          </a>
+          <a href="#" aria-label="Facebook" class="hover:opacity-80">
+            <img src="images/ic_fb.png" alt="Facebook Logo" class="h-8">
+          </a>
+          <a href="#" aria-label="Instagram" class="hover:opacity-80">
+            <img src="images/ic_instagram.png" alt="Instagram Logo" class="h-8">
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div>
+        <form action="send_email.php" method="POST" class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label for="first-name" class="block text-gray-700">First Name</label>
+              <input type="text" id="first-name" name="first_name" placeholder="Your First Name" class="w-full p-2 border border-gray-300 rounded" required>
+            </div>
+            <div>
+              <label for="last-name" class="block text-gray-700">Last Name</label>
+              <input type="text" id="last-name" name="last_name" placeholder="Your Last Name" class="w-full p-2 border border-gray-300 rounded" required>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label for="email" class="block text-gray-700">Email</label>
+              <input type="email" id="email" name="email" placeholder="example@email.com" class="w-full p-2 border border-gray-300 rounded" required>
+            </div>
+            <div>
+              <label for="phone" class="block text-gray-700">Phone Number</label>
+              <input type="text" id="phone" name="phone" placeholder="Optional" class="w-full p-2 border border-gray-300 rounded">
+            </div>
+          </div>
+          <div>
+            <label for="message" class="block text-gray-700">Pesan</label>
+            <textarea id="message" name="message" placeholder="Type your message here..." rows="4" class="w-full p-2 border border-gray-300 rounded" required></textarea>
+          </div>
+          <div>
+            <button type="submit" class="bg-teal-600 text-white py-2 px-4 rounded shadow hover:bg-teal-700">
+              Kirim Pesan
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="headfot.js"></script>
+</body>
+</html>

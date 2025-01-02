@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Clean Kick</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <div id="header"></div>
+
+        <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-96" style="background-image: url('path/to/your-image.jpg');">
+        <div class="absolute inset-0 bg-opacity-30" 
+        style="background-image: url('images/sphom.jpg'); background-size: cover; background-position: center;">
+        </div> <!-- Overlay -->
+        <div class="container mx-auto flex justify-between items-center h-full px-6 relative">
+            <!-- Teks di sebelah kiri -->
+            <div class="text-white text-lg md:text-2xl font-bold">
+                "Sepatu Bersih, Gaya Makin Percaya Diri"
+            </div>
+            <!-- Tombol di sebelah kanan -->
+            <div>
+                <a href="pesan.html" class="bg-teal-500 text-white py-3 px-6 rounded hover:bg-teal-600">
+                    Pesan Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Welcome Section (Pindah ke Atas) -->
+    <section class="bg-gradient-to-b from-teal-100 to-white py-16 px-6 md:px-12 text-center">
+        <h2 class="text-2xl md:text-4xl font-extrabold text-gray-900">
+            Selamat Datang di <span class="text-teal-600">Clean Kick</span>
+        </h2>
+        <p class="mt-6 text-lg md:text-xl text-gray-700 leading-relaxed">
+            Jadikan sepatu kesayangan Anda selalu tampak <span class="font-semibold text-teal-600">bersih</span>, 
+            <span class="font-semibold text-teal-600">baru</span>, dan <span class="font-semibold text-teal-600">siap melangkah!</span>
+            Kami adalah solusi terbaik untuk semua kebutuhan perawatan sepatu Anda.
+        </p>
+
+        <div class="mt-8 space-y-6 text-gray-600">
+            <p class="text-base md:text-lg">
+                Dari pembersihan ringan hingga perawatan mendetail, <span class="font-medium text-gray-800">Clean Kick</span> memberikan layanan profesional
+                dengan teknologi terkini. Tidak perlu khawatir tentang noda membandel atau kerusakan sepatu.
+            </p>
+            <p class="text-base md:text-lg">
+                Dengan tim ahli berpengalaman, kami memastikan sepatu Anda kembali nyaman dipakai dan tampil memukau.
+                <span class="font-semibold text-teal-600">Kualitas, kecepatan, dan kepedulian lingkungan adalah prioritas kami.</span>
+            </p>
+        </div>
+        <div class="mt-10">
+            <a href="#layanan" class="px-8 py-3 bg-teal-600 text-white rounded-lg shadow-lg hover:bg-teal-700 focus:ring focus:ring-teal-300 font-semibold text-lg transition-all">
+                Jelajahi Layanan Kami
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Layanan Section (Pindah ke Bawah) -->
+    <section id="layanan">
+        <div class="bg-gray-300 h-16 flex items-center justify-center">
+            <h1 class="text-lg font-bold text-gray-800">SERVICE</h1>
+        </div>
+    </section>
+    
+    <!-- Service Section -->
+    <div class="max-w-4xl mx-auto mt-6 px-4 relative group">
+        <!-- Left Arrow -->
+        <button id="left-arrow" 
+        class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full z-10 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity shadow-md">
+            &lt;
+        </button>
+        <div id="service-container" class="flex overflow-x-auto space-x-6 scrollbar-hide">
+            <!-- Cuci Reguler -->
+            <div class="flex-shrink-0 bg-white p-6 shadow-md rounded-md w-80 flex flex-col items-center">
+                <div class="h-64 flex items-center justify-center"> <!-- Increase height here -->
+                    <img src="images/c_reguler.png" alt="Cuci Reguler" class="h-full object-contain">
+                </div>
+                <div class="mt-6 text-center"> <!-- Increase margin here -->
+                    <h2 class="font-semibold text-gray-700 text-lg">Cuci Reguler</h2>
+                    <p class="text-gray-500 text-sm">Rp20.000 - Rp30.000</p>
+                </div>
+            </div>
+        
+            <!-- Cuci Deep Clean -->
+            <div class="flex-shrink-0 bg-white p-6 shadow-md rounded-md w-80 flex flex-col items-center">
+                <div class="h-64 flex items-center justify-center"> <!-- Increase height here -->
+                    <img src="images/c_premium.png" alt="Cuci Deep Clean" class="h-full object-contain">
+                </div>
+                <div class="mt-6 text-center"> <!-- Increase margin here -->
+                    <h2 class="font-semibold text-gray-700 text-lg">Cuci Premium</h2>
+                    <p class="text-gray-500 text-sm">Rp40.000 - Rp60.000</p>
+                </div>
+            </div>
+        
+            <!-- Repaint / Recolor -->
+            <div class="flex-shrink-0 bg-white p-6 shadow-md rounded-md w-80 flex flex-col items-center">
+                <div class="h-64 flex items-center justify-center"> <!-- Increase height here -->
+                    <img src="images/Repaint.png" alt="Repaint / Recolor" class="h-full object-contain">
+                </div>
+                <div class="mt-6 text-center"> <!-- Increase margin here -->
+                    <h2 class="font-semibold text-gray-700 text-lg">Repaint / Recolor</h2>
+                    <p class="text-gray-500 text-sm">Rp80.000 - Rp120.000</p>
+                </div>
+            </div>
+        
+            <!-- Repair (Perbaikan) -->
+            <div class="flex-shrink-0 bg-white p-6 shadow-md rounded-md w-80 flex flex-col items-center">
+                <div class="h-64 flex items-center justify-center"> <!-- Increase height here -->
+                    <img src="images/Repair.png" alt="Repair (Perbaikan)" class="h-full object-contain">
+                </div>
+                <div class="mt-6 text-center"> <!-- Increase margin here -->
+                    <h2 class="font-semibold text-gray-700 text-lg">Repair (Perbaikan)</h2>
+                    <p class="text-gray-500 text-sm">Rp100.000 - Rp150.000</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Right Arrow -->
+        <button id="right-arrow" 
+        class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full z-10 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity shadow-md">
+            &gt;
+        </button>
+    </div>
+    
+   <!-- Testimonial Section -->
+    <section class="py-16">
+        <h2 class="text-center text-2xl font-bold mb-8">Testimonial</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 container mx-auto px-4">
+            <!-- Testimonial Card -->
+            <div class="bg-white shadow-lg p-6 text-center">
+                <img src="/path/to/person1.jpg" alt="James Pattinson" class="w-20 h-20 mx-auto rounded-full mb-4">
+                <h3 class="font-bold">James Pattinson</h3>
+                <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
+                <p class="mt-4">"Sepatu favorit saya kembali seperti baru setelah dicuci di Clean Kick!"</p>
+            </div>
+            <div class="bg-white shadow-lg p-6 text-center">
+                <img src="/path/to/person1.jpg" alt="James Pattinson" class="w-20 h-20 mx-auto rounded-full mb-4">
+                <h3 class="font-bold">James Pattinson</h3>
+                <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
+                <p class="mt-4">"Sepatu favorit saya kembali seperti baru setelah dicuci di Clean Kick!"</p>
+            </div>
+            <div class="bg-white shadow-lg p-6 text-center">
+                <img src="/path/to/person1.jpg" alt="James Pattinson" class="w-20 h-20 mx-auto rounded-full mb-4">
+                <h3 class="font-bold">James Pattinson</h3>
+                <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
+                <p class="mt-4">"Sepatu favorit saya kembali seperti baru setelah dicuci di Clean Kick!"</p>
+            </div>
+            <!-- Repeat Cards for Other Testimonials -->
+        </div>
+    </section>
+
+    <!-- Custom Tailwind CSS for Hiding Scrollbar -->
+    <style>
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+    <!-- JavaScript for Scrolling -->
+    <script>
+        const container = document.getElementById('service-container');
+        const leftArrow = document.getElementById('left-arrow');
+        const rightArrow = document.getElementById('right-arrow');
+        leftArrow.addEventListener('click', () => {
+            container.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+        rightArrow.addEventListener('click', () => {
+            container.scrollBy({ left: 300, behavior: 'smooth' });
+        });
+    </script>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+    <script src="headfot.js"></script>
+</body>
+</html>
